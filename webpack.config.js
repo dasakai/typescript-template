@@ -8,18 +8,20 @@ module.exports = {
         filename: '[name].bundle.js'
     },
     resolve: {
-        extenstions: ['', '.js', '.ts']
+        extensions: ['', '.js', '.ts', '.tsx']
     },
+    devtool: 'source-map',
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.ts(x?)$/,
                 exclude: /node_modules/,
-                loader: 'ts-loader'
+                use: 'awesome-typescript-loader'
             },
             {
-                test: /\.jon$/,
-                loader: 'json-loader'
+                enforce: 'pre',
+                test: /\.js$/,
+                loader: 'source-map-loader'
             }
         ]
     }
