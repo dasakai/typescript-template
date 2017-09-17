@@ -1,0 +1,39 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "cross-env NODE_ENV=development gulp webpack",
+    "build:prod": "cross-env NODE_ENV=production gulp webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasakai/typescript-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasakai/typescript-template/issues"
+  },
+  "homepage": "https://github.com/dasakai/typescript-template#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-webpack": "^1.5.0",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "cross-env": "^5.0.5",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webpack": "^1.5.0",
+    "json-loader": "^0.5.7"
+  }
+}
